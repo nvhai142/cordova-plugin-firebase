@@ -82,7 +82,7 @@
   </platform>
 
   <platform name="ios">
-    <hook type="after_plugin_install" src="scripts/crashlytics/ios/after_plugin_install.js" />
+    <!-- <hook type="after_plugin_install" src="scripts/crashlytics/ios/after_plugin_install.js" />
     <hook type="before_plugin_uninstall" src="scripts/crashlytics/ios/before_plugin_uninstall.js" />
     <hook type="before_plugin_install" src="scripts/configurations/unzipAndCopySound.js" />
 
@@ -112,7 +112,7 @@
     <framework src="FirebaseMessaging" type="podspec" spec="~> 4.1.9" />
     <framework src="FirebaseAuth" type="podspec" spec="~> 6.4.0" />
     <framework src="FirebaseRemoteConfig" type="podspec" spec="~> 4.4.5" />
-    <framework src="FirebasePerformance" type="podspec" spec="~> 3.1.7" />
+    <framework src="FirebasePerformance" type="podspec" spec="~> 3.1.7" /> -->
     
   </platform>
 </plugin>
