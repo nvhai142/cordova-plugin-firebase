@@ -49,17 +49,7 @@
         <data android:scheme="https" android:host="$APP_DOMAIN" android:pathPrefix="$APP_PATH"/>
       </intent-filter>
     </config-file>
-    <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <service android:name="org.apache.cordova.firebase.FirebasePluginMessagingService" android:stopWithTask="false">
-        <intent-filter>
-          <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-        </intent-filter>
-      </service>
-      <receiver android:name="org.apache.cordova.firebase.OnNotificationOpenReceiver"></receiver>
-    </config-file>
-    <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
-    </config-file>
+    
 
     <resource-file src="google-services.json" target="./google-services.json" />
     <resource-file src="src/android/cordova-plugin-firebase-strings.xml" target="res/values/cordova-plugin-firebase-strings.xml" />
